@@ -47,7 +47,7 @@ If desired, set the component to assist with the return of data from the markdow
 <?php
 // in app/Controller/BakeriesController.php
 class BakeriesController extends AppController {
-    public $helpers = array('Markdown.Markdown');
+		public $helpers = array('Markdown.Markdown');
 		public $components = array('Markdown.Markdown');
 
 		public function index() {
