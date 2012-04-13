@@ -52,7 +52,7 @@ class BakeriesController extends AppController {
 		public $components = array('Markdown.Markdown');
 
 		public function index() {
-				$this->set('textInMarkdownFormat', $this->Markdown->getFile($pathToFile));
+			$this->set('textInMarkdownFormat', $this->Markdown->getFile($pathToFile));
 		}
 }
 ```
