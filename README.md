@@ -33,7 +33,7 @@ Bootstrap the plugin in app/Config/bootstrap.php:
 
 ```php
 <?php
-CakePlugin::load('Markdown');
+CakePlugin::load(array('Markdown' => array('bootstrap' => true)));
 ```
 
 
