@@ -49,10 +49,25 @@ If desired, set the component to assist with the return of data from the markdow
 class BakeriesController extends AppController {
 
 		public $helpers = array('Markdown.Markdown');
+
+		public function index() {
+			$this->set('textInMarkdownFormat', $yourTextInMarkdownFormat);
+		}
+}
+```
+
+Or, if the markdown content is in a file...
+
+```php
+<?php
+// in app/Controller/BakeriesController.php
+class BakeriesController extends AppController {
+
+		public $helpers = array('Markdown.Markdown');
 		public $components = array('Markdown.Markdown');
 
 		public function index() {
-			$this->set('textInMarkdownFormat', $this->Markdown->getFile($pathToFile));
+			$this->set('textInMarkdownFormat', $this->Markdown->getFile($pathToMarkdownFile));
 		}
 }
 ```
