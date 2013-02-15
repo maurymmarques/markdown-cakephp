@@ -1,0 +1,12 @@
+{
+    "name": "maurymmarques/markdown-cakephp",
+	"license": "MIT",
+    "type": "cakephp-plugin",
+	"version": "1.0.0",
+    "require": {
+        "composer/installers": "*"
+    },
+ 	"extra": {
+        "installer-name": "Markdown"
+    }
+}
