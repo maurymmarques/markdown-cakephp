@@ -1,4 +1,6 @@
 <?php
+use Michelf\Markdown;
+
 /**
  * Markdown Helper
  *
@@ -14,10 +16,10 @@ class MarkdownHelper extends AppHelper {
  */
 	public function transform($text) {
 		if (!isset($this->parser)) {
-			if (!class_exists('Markdown_Parser')) {
-				App::import('Vendor', 'Markdown.MarkdownExtra/markdown');
+			if (!class_exists('Markdown')) {
+				App::import('Vendor', 'Markdown.MarkdownExtra' . DS . 'Michelf' . DS . 'Markdown');
 			}
-			$this->parser = new Markdown_Parser();
+			$this->parser = new Markdown();
 		}
 		return $this->parser->transform($text);
 	}
