@@ -73,3 +73,17 @@ In the view you can use something like:
 // in app/View/Bakeries/index.ctp
 echo $this->Markdown->transform($textInMarkdownFormat);
 ```
+
+In the model you can use something like:
+
+```php
+// in app/Model/Bakery.php
+class BakeryModel extends AppModel {
+	
+	public $actsAs = array('Markdown.Markdown');
+
+	public function beforeSave($options = array()) {
+		$this->data[$this->alias]['text_html'] = $this->transform( $this->data[$this->alias]['text_md'] );
+		return true;
+	}
+}
