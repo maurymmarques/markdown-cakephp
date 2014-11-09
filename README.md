@@ -20,7 +20,7 @@ Copyright (c) 2011 Maury M. Marques
 
 ## Installation
 
-You can clone the plugin into your project (or if you want you can use as a [submodule](http://help.github.com/submodules)):
+You can clone the plugin into your project (or if you want you can use it as a [submodule](http://help.github.com/submodules)):
 
 ```
 cd path/to/app/Plugin or /plugins
