@@ -1,5 +1,5 @@
 {
-    "name": "maurymmarques/markdown-cakephp",
+    "name": "maurymmarques/markdown-plugin",
     "description": "A CakePHP plugin that facilitates the use of PHP Markdown with CakePHP",
     "type": "cakephp-plugin",
     "keywords": ["cakephp", "markdown", "plugin"],
