@@ -30,6 +30,11 @@ Add the plugin to your project's `composer.json` - something like this:
 {
   "require": {
     "maurymmarques/markdown-plugin": "dev-master"
+  },
+  "extra": {
+    "installer-paths": {
+      "app/Plugin/Markdown": ["maurymmarques/markdown-plugin"]
+    }
   }
 }
 ```
